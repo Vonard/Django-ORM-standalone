@@ -15,10 +15,12 @@ pip install -r requirements.txt
 
 ```dotenv
 DATABASE_HOST=Адрес базы данных
-USER_PASSWORD=Пароль пользователя
+DB_USER_PASSWORD=Пароль пользователя
 SITE_SECRET_KEY=Секретный ключ
 DATABASE_NAME=Имя базы данных
 DATABASE_USER=Имя пользователя
+DATABASE_PORT=Порт базы данных
+DATABASE_ENGINE=Тип базы данных
 ```
 
 ### Как запустить

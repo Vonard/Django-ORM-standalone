@@ -4,12 +4,12 @@ load_dotenv()
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': os.getenv("DATABASE_ENGINE"),
         'HOST': os.getenv("DATABASE_HOST"),
-        'PORT': '5434',
+        'PORT': os.getenv("DATABASE_PORT"),
         'NAME': os.getenv("DATABASE_NAME"),
         'USER': os.getenv("DATABASE_USER"),
-        'PASSWORD': os.getenv("USER_PASSWORD"),
+        'PASSWORD': os.getenv("DB_USER_PASSWORD"),
     }
 }
 
